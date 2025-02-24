@@ -1,0 +1,119 @@
+/* Importation d'une police moderne */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Style général */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #D4EDDA; /* Vert clair doux */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* Conteneur du formulaire */
+.container {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 280px; /* Taille réduite */
+    text-align: center;
+}
+
+/* Titre */
+h2 {
+    color: #2C6E49; /* Vert foncé */
+    font-size: 20px; /* Taille réduite */
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+/* Style des labels */
+label {
+    display: block;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 400;
+    color: #333;
+    margin-top: 8px;
+}
+
+/* Style des champs input et select */
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 3px;
+    border: 1.8px solid #A3D9A5; /* Bordure verte claire */
+    border-radius: 6px;
+    font-size: 13px;
+    background: #F8FFF8; /* Fond légèrement vert pâle */
+    transition: 0.3s;
+}
+
+/* Effet focus sur les champs */
+input:focus, select:focus {
+    border-color: #57A773;
+    outline: none;
+    background: #E7F5E7;
+}
+
+/* Bouton de soumission */
+.btn {
+    width: 100%;
+    background: #2C6E49; /* Vert foncé */
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 14px; /* Taille réduite */
+    font-weight: bold;
+    border-radius: 6px;
+    margin-top: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Effet hover sur le bouton */
+.btn:hover {
+    background: #57A773;
+}
+
+/* Messages d'erreur */
+.error {
+    font-size: 11px;
+    color: red;
+    display: block;
+    margin-top: 2px;
+}
+
+/* Popup de bienvenue */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: none;
+}
+
+/* Bouton du popup */
+.popup button {
+    background: #2C6E49;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Effet hover bouton popup */
+.popup button:hover {
+    background: #57A773;
+}
