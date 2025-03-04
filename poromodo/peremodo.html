@@ -1,32 +1,28 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minuteur Pomodoro</title>
+    <title>Pomodoro Timer</title>
     <link rel="stylesheet" href="poromodo.css">
 </head>
 <body>
-    <div class="pomodoro">
-        <h2 id="session-title">SESSION</h2>
-        <div id="timer">25:00</div>
-        <button id="start-pause">Start</button>
-        <button id="reset">Reset</button>
-        <div class="controls">
-            <div>
-                <p>Break Length</p>
-                <button class="decrement" data-type="break">-</button>
-                <span id="break-length">5</span>
-                <button class="increment" data-type="break">+</button>
-            </div>
-            <div>
-                <p>Session Length</p>
-                <button class="decrement" data-type="session">-</button>
-                <span id="session-length">25</span>
-                <button class="increment" data-type="session">+</button>
+    <div class="container">
+        <div class="pomodoro">
+            <h1 id="session-title">SESSION</h1>
+            <div id="timer">25:00</div>
+            <div class="buttons">
+                <button id="start-pause">Start</button>
+                <button id="reset">Reset</button>
             </div>
         </div>
+
+        <div class="notes">
+            <h3>Task Notes</h3>
+            <textarea id="task-notes" placeholder="Write your notes here..."></textarea>
+        </div>
     </div>
+
     <script src="poromodo.js"></script>
 </body>
 </html>
