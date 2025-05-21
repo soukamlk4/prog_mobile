@@ -1,0 +1,226 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f1f1f1, #e2e2e2);
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+
+#header {
+    text-align: center;
+    background: #ecf0f1;
+    color: black;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    font-family: 'Arial', sans-serif;
+}
+
+#header h1 {
+    font-size: 3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#header p {
+    font-size: 1.2em;
+    color: #16a085;
+    font-family: 'Georgia', serif;
+}
+
+/* Profile Section */
+#profile {
+    margin: 20px 0;
+}
+
+#profile img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: contain;
+    border: 5px solid #16a085;
+    transition: transform 0.3s;
+}
+
+#profile img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    margin: 20px 0;
+    background: #ecf0f1;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+#contact a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: #0073e6;
+}
+
+/* About Section */
+#about {
+    text-align: left;
+    padding: 15px 25px;
+    background: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Georgia', serif;
+}
+
+#about h2 {
+    font-size: 2em;
+    border-bottom: 3px solid #16a085;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+#about p {
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+
+/* Skills Section */
+#skills {
+    margin: 40px 0;
+    background: #ecf0f1;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Verdana', sans-serif;
+}
+
+#skills h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    text-align: center;
+    width: 100px;
+}
+
+.skill img {
+    width: 100%;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Projects Section */
+/* Projects Section */
+#projects {
+    margin: 60px 0;
+    padding: 40px 80px;
+    background: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Georgia', serif;
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+}
+
+.project {
+    padding: 30px;
+    background: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2; /* Ensures other projects are in front */
+}
+
+.project-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; /* Places Project 1 behind */
+    background-color: #f9f9f9; /* Slight background for separation */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.project p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Sign In Button Section */
+#button {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px; /* Space at the bottom to balance other sections */
+}
+
+#button button {
+    padding: 15px 30px;
+    background-color: #16a085;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Ensures button is a reasonable width */
+    margin: 0 auto; /* Centers the button */
+    display: block; /* Ensures the button is treated as a block element */
+}
+
+#button button:hover {
+    background-color: #1abc9c;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
